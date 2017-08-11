@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/basic_set">
+
+        <SwitchPreference android:key="night_mode"
+            android:title="@string/night_mode"
+            android:defaultValue="false" />
+
+        <SwitchPreference android:key="no_picture_mode"
+                          android:title="@string/no_picture_mode"
+                          android:defaultValue="false" />
+
+        <SwitchPreference android:key="built_in_browser"
+                          android:title="@string/built_in_browser"
+                          android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

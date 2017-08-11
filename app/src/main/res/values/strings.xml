@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">小黄鸭</string>
+
+    <string name="about">关于</string>
+    <string name="collection">收藏</string>
+    <string name="home_page">主页</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="set">设置</string>
+    
+    <string name="basic_set">基本设置</string>
+    <string name="no_picture_mode">无图模式</string>
+    <string name="built_in_browser">使用内置浏览器</string>
+
+    <string name="light_mode">日间模式</string>
+
+    <string name="tab_zhihu">知乎日报</string>
+    <string name="tab_douban">豆瓣一刻</string>
+    <string name="tab_guokr">果壳精选</string>
+
+    <string name="loading">正在加载...</string>
+    <string name="load_fail">加载失败</string>
+    <string name="reload">重新加载</string>
+
+    <string name="network_please">请检查网络设置</string>
+    <string name="to_set_network">去设置网络</string>
+
+    <string name="open_in_browser">在浏览器中打开</string>
+    <string name="copy_url">复制链接</string>
+
+    <string name="copy_url_success">复制链接成功</string>
+    <string name="copy_url_fail">复制链接失败</string>
+    <string name="share_fail">分享失败</string>
+    <string name="no_browser_found">没有找到浏览器</string>
+    <string name="collection_success">收藏成功</string>
+    <string name="collection_fail">收藏失败</string>
+
+    <string name="share_to">分享至</string>
+    <string name="share_from">分享自</string>
+
+    <string name="rate_fail">评价失败</string>
+    <string name="feedback_fail">反馈失败</string>
+
+    <!--about界面-->
+    <string name="version">版本: V1.0.0</string>
+    <string name="rate">为应用评分</string>
+    <string name="rate_desc">如果你喜欢小黄鸭App,请在商店中给它一个好评吧</string>
+    <string name="author">作者</string>
+    <string name="author_name">啊翔</string>
+    <string name="author_description">广东，湛江</string>
+    <string name="contributors">代码贡献者</string>
+    <string name="contributors_desc">https://github.com/AnAndroidXiang/</string>
+    <string name="follow_me_on_github">在GitHub关注我</string>
+    <string name="follow_me_on_github_desc">https://github.com/AnAndroidXiang/</string>
+    <string name="follow_me_on_zhihu">在知乎关注我</string>
+    <string name="follow_me_on_zhihu_desc">https://www.zhihu.com/people/lizhaotailang</string>
+    <string name="support">支持</string>
+    <string name="source_code">源代码</string>
+    <string name="source_code_desc">https://github.com/TonnyL/PaperPlane</string>
+    <string name="feedback">反馈Bug / 建议</string>
+    <string name="feedback_desc">帮助我改进小黄鸭App</string>
+    <string name="sendto">mailto:2389351081@qq.com</string>
+    <string name="mail_topic">小黄鸭使用反馈与建议</string>
+    <string name="device_model">设备型号:</string>
+    <string name="sdk_version">SDK版本:</string>
+    <string name="no_mail_app">没有安装邮件类应用</string>
+    <string name="coffee">请我喝杯咖啡</string>
+    <string name="coffee_description">如果你认同我的工作，可以请我喝杯咖啡支持我的工作</string>
+    <string name="donate">捐助开发者</string>
+    <string name="donate_content">支付宝账号将会复制到粘贴板，进入支付宝可直接粘贴完成捐赠，感谢您的支持！</string>
+    <string name="donate_account">2389351081@qq.com</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/refresh_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/scrollbar_type"
+            android:scrollbarSize="3dp"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/layout_main_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button_error_to_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/reload"
+                android:textColor="@color/text_color"
+                android:background="@color/colorPrimary"
+                android:textSize="@dimen/sp_15"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

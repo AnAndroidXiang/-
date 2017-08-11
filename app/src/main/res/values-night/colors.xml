@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#35464e</color>
+    <color name="colorPrimaryDark">#212a2f</color>
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="no_select_text_color">#A9DCD7</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="viewBackground">#212a2f</color>
+
+    <color name="colorNavItemSelected">#03A9F4</color>
+    <color name="colorNavItemUnselected">#8799a5</color>
+
+    <color name="colorPrimaryText">#e4e4e4</color>
+    <color name="colorSecondaryText">#b5b5b5</color>
+
+    <color name="mdtp_accent_color">#35464e</color>
+    <color name="mdtp_accent_color_dark">#212a2f</color>
+</resources>

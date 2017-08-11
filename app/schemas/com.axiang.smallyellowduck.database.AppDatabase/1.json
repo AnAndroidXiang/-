@@ -1,0 +1,165 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a14d2402de73482e6c88fa2a3bbd98d7",
+    "entities": [
+      {
+        "tableName": "zhihu_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`images` TEXT, `id` INTEGER, `title` TEXT, `favorite` INTEGER, `favorite_time` INTEGER, `timestamp` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "images",
+            "columnName": "images",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "favoriteTime",
+            "columnName": "favorite_time",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "douban_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`short_url` TEXT, `abstract` TEXT, `date` TEXT, `thumbs` TEXT, `title` TEXT, `id` INTEGER, `favorite` INTEGER, `favorite_time` INTEGER, `timestamp` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "shortUrl",
+            "columnName": "short_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "abs",
+            "columnName": "abstract",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "thumbs",
+            "columnName": "thumbs",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "favoriteTime",
+            "columnName": "favorite_time",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "guokr_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`images` TEXT, `id` INTEGER, `title` TEXT, `summary` TEXT, `favorite` INTEGER, `favorite_time` INTEGER, `timestamp` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "imageList",
+            "columnName": "images",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "summary",
+            "columnName": "summary",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "favoriteTime",
+            "columnName": "favorite_time",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a14d2402de73482e6c88fa2a3bbd98d7\")"
+    ]
+  }
+}

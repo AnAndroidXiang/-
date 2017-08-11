@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/app_name">
+
+        <Preference android:title="@string/version" />
+
+        <Preference android:key="rate"
+                    android:title="@string/rate"
+                    android:summary="@string/rate_desc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/author">
+
+        <Preference android:key="author"
+                    android:title="@string/author_name"
+                    android:summary="@string/author_description" />
+
+        <Preference android:key="follow_me_on_github"
+                    android:title="@string/follow_me_on_github"
+                    android:summary="@string/follow_me_on_github_desc" />
+
+        <Preference android:key="follow_me_on_zhihu"
+                    android:title="@string/follow_me_on_zhihu"
+                    android:summary="@string/follow_me_on_zhihu_desc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/support">
+
+        <Preference android:key="feedback"
+                    android:title="@string/feedback"
+                    android:summary="@string/feedback_desc" />
+
+        <Preference android:key="coffee"
+                    android:title="@string/coffee"
+                    android:summary="@string/coffee_description" />
+    </PreferenceCategory>
+</PreferenceScreen>
