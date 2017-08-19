@@ -88,7 +88,8 @@ public class FavoriteAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             DoubanNewsPosts posts = (DoubanNewsPosts) favoriteData.get(position);
             return posts.getThumbs().isEmpty() ? GlobalContants.T2 : GlobalContants.T2I1;
         } else if (favoriteData.get(position) instanceof GuokrNewsResult) {
-            return GlobalContants.T2I1;
+            GuokrNewsResult result = (GuokrNewsResult) favoriteData.get(position);
+            return result.getImageList().isEmpty() ? GlobalContants.T2 : GlobalContants.T2I1;
         }
         return super.getItemViewType(position);
     }
@@ -150,9 +151,15 @@ public class FavoriteAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     .into(((T1WithIconViewHolder) holder).image);
             ((T1WithIconViewHolder) holder).title.setText(question.getTitle());
         } else if (holder instanceof T2WithoutIconViewHolder) {
-            DoubanNewsPosts posts = (DoubanNewsPosts) data;
-            ((T2WithoutIconViewHolder) holder).title.setText(posts.getTitle());
-            ((T2WithoutIconViewHolder) holder).content.setText(posts.getAbs());
+            if (data instanceof DoubanNewsPosts) {
+                DoubanNewsPosts posts = (DoubanNewsPosts) data;
+                ((T2WithoutIconViewHolder) holder).title.setText(posts.getTitle());
+                ((T2WithoutIconViewHolder) holder).content.setText(posts.getAbs());
+            } else if (data instanceof GuokrNewsResult) {
+                GuokrNewsResult result = (GuokrNewsResult) data;
+                ((T2WithoutIconViewHolder) holder).title.setText(result.getTitle());
+                ((T2WithoutIconViewHolder) holder).content.setText(result.getSummary());
+            }
         } else if (holder instanceof  T1WithoutIconViewHolder) {
             ZhihuNewsQuestion question = (ZhihuNewsQuestion) data;
             ((T1WithoutIconViewHolder) holder).title.setText(question.getTitle());

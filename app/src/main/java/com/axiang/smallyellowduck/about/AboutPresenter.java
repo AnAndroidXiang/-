@@ -41,14 +41,6 @@ public class AboutPresenter implements AboutContract.Presenter {
 
     @Override
     public void rate() {
-        try {
-            Uri uri = Uri.parse("market://details?id=" + appCompatActivity.getPackageName());
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            appCompatActivity.startActivity(intent);
-        } catch (ActivityNotFoundException e) {
-            view.showRateError();
-        }
     }
 
     @Override
