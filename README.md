@@ -1,0 +1,4 @@
+# SmallYellowDuck
+一款可以查看知乎日报、豆瓣一刻、果壳精选文章的应用
+基于MVP+Volley+Room+Gson开发
+风格采用Material Design设计，实现了日间和夜间的切换，使用SQLite本地数据库实现收藏列表，实现了断网情况下的处理，采用PreferenceScreen实现界面的风格
